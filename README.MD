@@ -1,4 +1,4 @@
-**_WIP_**
+**_Work In Progress_**
 ---
 
 # Lenovo TB-330XU (ROW) Firmware + SP Flash Tool Setup
