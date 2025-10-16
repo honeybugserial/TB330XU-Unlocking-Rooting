@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<flashtool-config version="2.0">
+	<general>
+		<chip-name>MT6768</chip-name>
+		<storage-type>EMMC</storage-type>
+		<download-agent>
+		 E:\ALDC\MTK_AllInOne_DA-resign.bin
+		</download-agent>
+		<scatter>
+		 E:\ALDC\format_TB330XC_CN_OPEN_UD_V14.218_T_ZUI_15.0.270_DEV_230807\out_merged_userdebug\MT6768_Android_scatter.txt
+		</scatter>
+		<authentication></authentication>
+		<rom-list>
+			<rom index="0" enable="true">
+			 E:\ALDC\format_TB330XC_CN_OPEN_UD_V14.218_T_ZUI_15.0.270_DEV_230807\out_merged_userdebug\preloader_barley_prc_commercial_lte.bin
+			</rom>
+		</rom-list>
+		<connection
+		 type="BromUSB"
+		 high-speed="false"
+		 without-battery="true"
+		 da_log_level="Debug"
+		 da_log_channel="UART" />
+	</general>
+	<commands>
+    <efuse>
+      <common-ctrl
+		Disable_UFS_boot="false"
+        USB_download_type="0"
+	    Disable_EMMC_boot="false"/>
+
+      <secure-ctrl
+	    Disable_DBGPORT_LOCK="false"
+	    Enable_SW_JTAG_CON="true"
+	    Enable_ACC="false"
+	    Enable_ACK="false"
+	    Enable_SLA="true"
+	    Enable_DAA="true"
+	    Enable_SBC="true"
+	    Disable_JTAG="false"/>
+	  <sbc-pub-key>
+		<key-type>pss</key-type>
+        <pub-key-e>010001</pub-key-e>
+        <pub-key-n>B77EDB4856C54F1CCD2F67EBB78862E9ABFC882976B1E4940FD9C7BB088D452BC257ABAEDE36905B8858B08924E3B7BF61B06D775C129F4501D251984C4F4EAF7A44755A273F8AF0EA0DBE24B61D138FD18AA7FB0C60055570283A71846CA316DBAE329F59044683337ECBAC353B9151FB365DBEF92F3485A04B2000B65F67056AAB78915E2B81E7E8433B94A476F595D13A5CCE68FE93B2D57CB24F7C0B9C1AC209A856F1C0A65CD53882686EB8F3F9E800E099C007D9E3456CD569E2B750AEE6A5A4DCA6AB1525CB5784F6E85F1ECC2E2E6643F15E40AD49133CE040E4F2BA48326855E33773A7E0D29CFA01EED8E07B4438C351F33BDC0DDC473D7156BC7B</pub-key-n>
+      </sbc-pub-key>
+
+    	<common-lock
+         com_ctrl_lock="false"
+         usb_id_lock="false"/>
+
+      <secure-lock
+	    sec_msc_lock = "false"
+        sec_attr_lock="false"
+        ackey_lock="false"
+        sbc_pubk_hash_lock="false"/>
+
+      <usb-id vid="0e8d" pid="0000"/>
+
+	  	<sec_msc
+         md1_sbc_en="false"
+         c2k_sbc_en="false" />
+
+      <read-back
+        dir="."
+        name="efuse_dump.txt"
+        time-prefix="false"/>
+    </efuse>
+	</commands>
+</flashtool-config>
+
