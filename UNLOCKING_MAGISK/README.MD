@@ -1,9 +1,11 @@
 # Lenovo TB330XU Bootloader Unlock + Root (ReliveDVD_6) [TB330XU_ROW_OPEN_USER_V5_V_ZUI_17.0.125_ST_250613]
 
 ### Boot into relivedvd_6
+
 Use the live environment to avoid driver issues.
 
 https://androidfilehost.com/?fid=1109791587270922802
+
 ---
 
 ### Copy required files into /opt/mtkclient
@@ -86,4 +88,5 @@ Bypass is harmless — press **Power** to continue.
 * dm-verity warning bypassable
 
 ```
+
 
