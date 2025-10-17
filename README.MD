@@ -1,6 +1,11 @@
 **_Work In Progress_**
 ---
 
+# Bootloader Unlocked and Rooted Success
+https://github.com/honeybugserial/TB330XU-Unlocking-Rooting/tree/main/UNLOCKING_MAGISK
+
+---
+
 # Lenovo TB-330XU (ROW) Firmware + SP Flash Tool Setup
 
 This repository contains configuration files and extracted metadata for the Lenovo **TB-330XU (ROW)** tablet based on the **MediaTek MT6768** platform.
